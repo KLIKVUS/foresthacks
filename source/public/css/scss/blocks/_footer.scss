@@ -1,0 +1,16 @@
+.footer {
+    height: 50px;
+    margin-top: 50px;
+    color: #A5A5A5;
+    font-size: 14px;
+    background-color: #1F1F1F;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__link {
+        color: #A5A5A5;
+        text-decoration: underline;
+    }
+}

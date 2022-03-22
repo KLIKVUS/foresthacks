@@ -1,0 +1,15 @@
+.main {
+    &__cards {
+        margin: auto;
+        width: $content-width-mb;
+    }
+}
+
+
+@media (min-width: $width-tb) {
+    .main {
+        &__cards {
+            width: $content-width-tb;
+        }
+    }
+}

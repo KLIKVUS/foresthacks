@@ -1,0 +1,60 @@
+main {
+    min-height: 100vh;
+    padding: 30px 20px 0 20px;
+}
+
+main h1 {
+    color: $white;
+    margin-top: 30px;
+    padding-bottom: 10px;
+    font-size: $title-mb;
+    font-family: "Nunion Bold", sans-serif;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+main h1:first-child { margin-top: 0; }
+
+main h1.noStyle {
+    border: unset;
+    font-size: x-large;
+}
+
+main h2, h3, h4, h5, h6 {
+    padding-top: 15px;
+    font-family: "Nunion Bold", sans-serif;
+}
+
+main p {
+    margin: 15px 0;
+    line-height: 1.4;
+}
+
+main a {
+    color: #8d25ee;
+    text-decoration: underline;
+}
+
+main img {
+    width: 100%;
+    margin: 25px 0;
+}
+
+
+@media (min-width: $width-tb) {
+    main, footer {
+        margin-left: auto;
+        width: calc(100% - 200px);
+    }
+
+    main {
+        padding: 40px 30px 0 30px;
+    }
+}
+
+@media (min-width: $width-pc) {
+    main, footer { width: calc(100% - 350px); }
+    main { padding: 50px 55px 0 55px; }
+    main img {
+        width: 50%;
+    }
+}

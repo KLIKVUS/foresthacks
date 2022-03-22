@@ -1,0 +1,81 @@
+.cards {
+    &__title {
+        text-align: center;
+        font-size: $title-mb;
+        font-family: "Nunion Bold", sans-serif;
+    }
+    &__wrapper {
+        margin-top: 35px;
+    }
+    &__card {
+        margin-bottom: 25px;
+        padding-bottom: 25px;
+        border-bottom: 2px solid #944141;
+    }
+    &__card:nth-child(even) {
+        text-align: right;
+    }
+    &__card:last-child {
+        margin-bottom: unset;
+        padding-bottom: unset;
+        border-bottom: unset;
+    }
+}
+
+.card {
+    &__subtitle {
+        margin-bottom: 15px;
+        font-size: $subtitle-mb;
+        font-family: "Nunion Bold", sans-serif;
+    }
+    &__description {
+        font-size: $description-mb;
+        color: #ffffff77;
+    }
+    &__link {
+        display: inline-block;
+        padding-top: 15px;
+        color: #ffffff99;
+        font-size: $description-mb;
+        text-decoration: underline;
+    }
+}
+
+
+@media (min-width: $width-tb) {
+    .cards {
+        &__title {
+            margin-top: 25px;
+            font-size: $title-tb;
+        }
+        &__card {
+            border-bottom-width: 3px;
+        }
+    }
+
+    .card {
+        &__subtitle {
+            font-size: $subtitle-tb;
+        }
+        &__description, &__link {
+            font-size: $description-tb;
+        }
+    }
+}
+
+@media (min-width: $width-pc) {
+    .cards {
+        &__title {
+            font-size: $title-pc;
+        }
+    }
+
+    .card {
+        &__subtitle {
+            font-size: $subtitle-pc;
+        }
+        &__description, &__link {
+            font-size: $description-pc;
+        }
+    }
+}

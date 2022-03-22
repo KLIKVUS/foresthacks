@@ -1,0 +1,22 @@
+body {
+    height: max-content;
+    min-width: $min-content-width;
+    color: $white;
+    font-size: $text-mb;
+    font-family: "Nunion Regular", sans-serif;
+    background-color: $black;
+    margin: auto;
+}
+
+
+@media (min-width: $width-tb) {
+    body {
+        font-size: $text-tb;
+    }
+}
+
+@media (min-width: $width-pc) {
+    body {
+        font-size: $text-pc;
+    }
+}
