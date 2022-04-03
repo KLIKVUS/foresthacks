@@ -17,7 +17,7 @@ const scrollToTopBtn = $("button.scroll-to-top");
 scrollToTopBtn.on("click", () => coolScroll("#"));
 
 function magic() {
-    if (window.pageYOffset > 100) {
+    if (window.pageYOffset > 1000) {
     scrollToTopBtn.css("opacity", 1);
     } else scrollToTopBtn.css("opacity", 0);
 }
