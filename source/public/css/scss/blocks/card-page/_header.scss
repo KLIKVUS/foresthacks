@@ -84,39 +84,79 @@
 }
 
 .nav {
-    overflow-y: auto;
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin-left: 20px;
     max-height: 50vh;
-    transition: max-height 1s, height 1s;
+    transition: max-height 0.2s;
     transition-duration: cubic-bezier(0.6, -0.28, 0.74, 0.05);
 
+    &__title {
+        margin-top: 20px;
+    }
     &__links {
-        padding: 20px 20px;
+        height: 100%;
+        margin-top: 10px;
+        padding-bottom: 20px;
+        overflow-y: auto;
     }
     &__link {
-        display: block;
+        display: inline-block;
+        position: relative;
+        margin-right: 10px;
         margin-bottom: 20px;
+        color: aqua;
         font-size: $subtitle-mb;
     }
+    &__link:target {color: #000000;}
     &__links li:last-child a {
         margin-bottom: 0;
     }
+}
+:target .nav__link {
+    color: #000000;
+}
+.nav__links::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+.nav__links::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+}
+.nav__links::-webkit-scrollbar-thumb {
+    background: #e1e1e1;
+    border: 0px none #ffffff;
+    //   border-radius: 50px;
+}
+.nav__links::-webkit-scrollbar-thumb:hover {
+    background: #ffffff;
+}
+.nav__links::-webkit-scrollbar-thumb:active {
+    background: #000000;
+}
+.nav__links::-webkit-scrollbar-track {
+    background: #666666;
+    border: 0px none #ffffff;
+    //   border-radius: 50px;
+}
+.nav__links::-webkit-scrollbar-track:hover {
+    background: #666666;
+}
+.nav__links::-webkit-scrollbar-track:active {
+    background: #333333;
+}
+.nav__links::-webkit-scrollbar-corner {
+    background: transparent;
 }
 
 
 
 @media (max-width: $max-width-mb) {
     .nav--hidden {
-        // width: 1px;
-        height: 0;
         max-height: 0;
-        margin: 0;
-        border: 0;
-        padding: 0;
-        white-space: nowrap;
-        // clip-path: inset(100%);
-        clip: rect(0 0 0 0);
-        overflow: hidden;
+        margin-top: 0;
     }
     .header__btn { display: block; }
 }
@@ -125,7 +165,10 @@
     .header {
         float: left;
         height: 100vh;
-        width: 200px;
+        width: 250px;
+
+        display: flex;
+        flex-direction: column;
 
         &__wrapper {
             height: auto;
@@ -137,6 +180,22 @@
             color: $black;
             font-size: 90px;
             text-align: center;
+        }
+    }
+
+    .nav {
+        max-height: unset;
+
+        &__link::before {
+            content: '';
+            transition: width 0.5s;
+            position: absolute; bottom: -5px;
+            background-color: aqua;
+            height: 2px;
+            width: 0;
+        }
+        &__link:hover::before {
+            width: 100%;
         }
     }
 }
