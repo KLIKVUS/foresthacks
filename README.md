@@ -6,4 +6,4 @@ ____
 Сайт был сделал для простого проекта заказчика за небольшую плату.
 ____
 
-### [ :link: Посетить сайт ](https://mrapar.github.io/foresthacks/)
+### [ :link: Посетить сайт ](https://klikvus.github.io/foresthacks/)
