@@ -40,9 +40,10 @@ main p {
 }
 
 main ul, ol {
+    padding-top: 25px;
     margin-bottom: 15px;
-}
-main ul, ol li {
+} 
+main ul li, ol li {
     padding-bottom: 15px;
     list-style-position: inside;
 }
