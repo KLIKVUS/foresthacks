@@ -346,8 +346,12 @@ main ul, ol {
 }
 
 main ul, ol li {
-  list-style: circle inside;
   padding-bottom: 15px;
+  list-style-position: inside;
+}
+
+main ul li {
+  list-style: disc;
 }
 
 main ul li:last-child {
