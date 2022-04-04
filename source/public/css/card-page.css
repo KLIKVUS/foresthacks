@@ -357,6 +357,7 @@ main a {
 }
 
 main img {
+  display: block;
   width: 100%;
   margin: 25px 0;
 }
@@ -382,6 +383,30 @@ main img {
 
   main img {
     width: 50%;
+    margin: 45px 0;
+  }
+
+  main h1, h2, h3, h4, h5, h6 {
+    margin-top: 35px;
+  }
+
+  main h1 {
+    font-size: 32px;
+    margin-top: 150px;
+  }
+
+  main p {
+    margin: 25px 0;
+    line-height: 1.2;
+  }
+
+  main ul, ol {
+    padding-top: 35px;
+    margin-bottom: 25px;
+  }
+
+  main ul li, ol li {
+    padding-bottom: 25px;
   }
 }
 .scroll-to-top {
