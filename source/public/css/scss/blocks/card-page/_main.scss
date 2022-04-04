@@ -23,9 +23,6 @@ main h2 {
     font-size: $subtitle-mb;
     border-bottom: 1px solid #ffffff80;
 }
-main h2:last-of-type {
-    margin-top: unset;
-}
 
 main h1:first-child { margin-top: 0; }
 
