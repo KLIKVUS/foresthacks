@@ -339,7 +339,7 @@ main ul li, ol li {
 }
 
 main ul li {
-  list-style: disc;
+  list-style-type: disc;
 }
 
 main ul li:last-child {
