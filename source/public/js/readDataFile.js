@@ -1,7 +1,7 @@
 const searchParams = new URLSearchParams(window.location.search)
 
 if (searchParams.has("card")) {
-    let url = searchParams.get("card");
+    const url = `../public/cardsData/${searchParams.get("card")}.txt`;
     
     $.ajax({
         url: url,
